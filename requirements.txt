@@ -1,1 +1,12 @@
-
+appdirs
+beautifulsoup4
+bs4
+certifi
+chardet
+idna
+Kodistubs
+packaging
+pkg-resources
+requests
+six
+urllib3

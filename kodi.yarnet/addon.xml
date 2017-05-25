@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.yar-net.ru" name="YARNET" version="2.0.0" provider-name="Alkyl1978">
-  <requires><import addon="xbmc.python" version="2.1.0"/></requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py"><provides>video</provides></extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Yar-net видео</summary>
-    <description>просмотр видео онлайн ярославль</description>
-    <platform>all</platform>
-  </extension>
-<extension point="xbmc.addon.repository"
-              name="github repositories">
-    <info compressed="true">https://github.com/alkyl1978/kodi_addon/blob/master/addons.xml</info>
-    <checksum>https://github.com/alkyl1978/kodi_addon/blob/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://github.com/alkyl1978/kodi_addon/blob/master/plugin.video.yar-net.ru</datadir>
-  </extension>
-<extension point="xbmc.addon.metadata">
-    <summary lang="ru">Yar-net video addon</summary>
-    <description lang="ru">просмотр видео онлайн ярославль</description>
-    <disclaimer lang="ru">просмотр видео онлайн ярославль</disclaimer>
-    <platform>all</platform>
-    <language>ru</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2</license>
-    <forum>forum.nn-akk.ru</forum>
-    <website>nn-akk.ru</website>
-    <email>alkyl1978@nn-akk.ru</email>
-    <source>https://github.com/alkyl1978/kodi_addon</source>
-  </extension>
+<addon id="kodi.yarnet" name="yarnet" version="1.0.0" provider-name="alkyl1978">
+	<requires>
+		<import addon="script.module.xbmcup" version="0.1.1"/>
+		<import addon="xbmc.python" version="2.14.0"/>
+  		<import addon="script.module.xbmcswift2" version="2.4.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+    		<summary>Yar-net video addon</summary>
+    		<description>просмотр видео онлайн ярославль</description>
+    		<disclaimer>просмотр видео онлайн ярославль</disclaimer>
+    		<platform>all</platform>
+    		<language>ru</language>
+    		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    		<forum>forum.nn-akk.ru</forum>
+    		<website>nn-akk.ru</website>
+    		<email>alkyl1978@nn-akk.ru</email>
+    		<source>https://github.com/alkyl1978/kodi_addon</source>
+	</extension>
 </addon>
