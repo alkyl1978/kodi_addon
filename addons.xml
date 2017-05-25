@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="plugin.video.yar-net.ru" name="YARNET" provider-name="Alkyl1978" version="2.0.0">
+  <requires><import addon="xbmc.python" version="2.1.0" /></requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video"><provides>video</provides></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Yar-net видео</summary>
+    <description>просмотр видео онлайн ярославль</description>
+    <platform>all</platform>
+  </extension>
+<extension name="github repositories" point="xbmc.addon.repository">
+    <info compressed="true">https://github.com/alkyl1978/kodi_addon/blob/master/addons.xml</info>
+    <checksum>https://github.com/alkyl1978/kodi_addon/blob/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://github.com/alkyl1978/kodi_addon/blob/master/plugin.video.yar-net.ru</datadir>
+  </extension>
+<extension point="xbmc.addon.metadata">
+    <summary lang="ru">Yar-net video addon</summary>
+    <description lang="ru">просмотр видео онлайн ярославль</description>
+    <disclaimer lang="ru">просмотр видео онлайн ярославль</disclaimer>
+    <platform>all</platform>
+    <language>ru</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2</license>
+    <forum>forum.nn-akk.ru</forum>
+    <website>nn-akk.ru</website>
+    <email>alkyl1978@nn-akk.ru</email>
+    <source>https://github.com/alkyl1978/kodi_addon</source>
+  </extension>
+</addon></addons>
