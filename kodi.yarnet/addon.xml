@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+	<addon id="kodi.yarnet" name="kodi.yarnet" version="0.0.1" provider-name="alkyl1978">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.xbmcup" version="0.2.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>kodi.yarnet</summary>
+		<description>
+			 просмотр видео Ярнет
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>forum.nn-akk.ru</forum>
+		<email>alkyl1978@nn-akk.ru</email>
+	</extension>
+</addon>

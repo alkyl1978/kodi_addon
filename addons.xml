@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+	<addon id="kodi.yarnet" name="kodi.yarnet" version="0.0.1" provider-name="alkyl1978">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.xbmcup" version="0.2.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>kodi.yarnet</summary>
+		<description>
+			 просмотр видео Ярнет
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>forum.nn-akk.ru</forum>
+		<email>alkyl1978@nn-akk.ru</email>
+	</extension>
+</addon>
+
+<addon id="repo.alkyl1978" name="alkyl1978 Repo" version="1.0.0" provider-name="alkyl1978">
+	<extension point="xbmc.addon.repository" name="alkyl1978 Repo">
+		<info compressed="false">https://raw.github.com/alkyl1978/kodi_addon/master/addons.xml</info>
+		<checksum>https://raw.github.com/alkyl1978/kodi_addon/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/alkyl1978/kodi_addon/master/zip</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Свой репозитарий</summary>
+		<description>Свой репозитарий</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.xbmcup" name="XbmcUp" version="0.2.1" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension library="service.py" point="xbmc.service" start="startup"/>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+    </extension>
+</addon>
+</addons>
