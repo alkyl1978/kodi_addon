@@ -1,20 +1,14 @@
 # -*- coding: utf-8 -*-
 
-import xbmcup.app, cover
+import xbmcup.app
+import xbmcup.parser
+from http import HttpData
+from defines import *
 
-class Index(xbmcup.app.Handler):
+class Index(xbmcup.app.Handler ,HttpData):
     def handle(self):
-        self.item(xbmcup.app.lang[30112], self.link('search'),                        folder=True, cover=cover.search)
-        self.item(xbmcup.app.lang[30120], self.link('filter', {'window' : ''}),       folder=True, cover=cover.treetv)
-
-        self.item(xbmcup.app.lang[35004], self.link('null', {}),       folder=True, cover=cover.treetv)
-
-        self.item(xbmcup.app.lang[30119], self.link('list',  {'dir' : '', 'sub_dir' : 'js-popularMovies'}),       folder=True, cover=cover.treetv)
-        self.item(xbmcup.app.lang[35001], self.link('list',  {'dir' : '', 'sub_dir' : 'js-popularSerials'}),       folder=True, cover=cover.treetv)
-        self.item(xbmcup.app.lang[35002], self.link('list',  {'dir' : '', 'sub_dir' : 'js-lastMovies'}),       folder=True, cover=cover.treetv)
-        self.item(xbmcup.app.lang[35003], self.link('list',  {'dir' : '', 'sub_dir' : 'js-lastSerials'}),       folder=True, cover=cover.treetv)
-
-        self.item(xbmcup.app.lang[30160], self.link('null', {}),       folder=True, cover=cover.treetv)
-
-        self.item(' - '+xbmcup.app.lang[30114], self.link('list', {'dir' : 'movies'}),       folder=True, cover=cover.treetv)
-        self.item(' - '+xbmcup.app.lang[30115], self.link('list', {'dir' : 'tvseries'}),     folder=True, cover=cover.treetv)
+	html=self.load(SITE_URL)
+	soup = xbmcup.parser.html(self.strip_scripts(html))
+	raions = soup.findAll('div', class_='rayon')	
+	for raion in raions:
+		self.item(raion.find(class_='name').string, self.link('ray-list'), folder=True )

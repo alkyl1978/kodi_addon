@@ -1,20 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-	<addon id="kodi.yarnet" name="kodi.yarnet" version="0.0.1" provider-name="alkyl1978">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="kodi.yarnet" name="yarnet" version="1.0.0" provider-name="alkyl1978">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.xbmcup" version="0.2.1"/>
+		<import addon="script.module.xbmcup" version="0.1.1"/>
+		<import addon="xbmc.python" version="2.14.0"/>
+  		<import addon="script.module.xbmcswift2" version="2.4.0"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
-		<provides>video</provides>
+	<extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>kodi.yarnet</summary>
-		<description>
-			 просмотр видео Ярнет
-		</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>forum.nn-akk.ru</forum>
-		<email>alkyl1978@nn-akk.ru</email>
+    		<summary>Yar-net video addon</summary>
+    		<description>просмотр видео онлайн ярославль</description>
+    		<disclaimer>просмотр видео онлайн ярославль</disclaimer>
+    		<platform>all</platform>
+    		<language>ru</language>
+    		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    		<forum>forum.nn-akk.ru</forum>
+    		<website>nn-akk.ru</website>
+    		<email>alkyl1978@nn-akk.ru</email>
+    		<source>https://github.com/alkyl1978/kodi_addon</source>
 	</extension>
 </addon>
