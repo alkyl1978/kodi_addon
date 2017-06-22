@@ -2,7 +2,6 @@
 <addons>
 <addon id="kodi.yarnet" name="yarnet" version="1.0.0" provider-name="alkyl1978">
 	<requires>
-		<import addon="script.module.xbmcup" version="0.1.1"/>
 		<import addon="xbmc.python" version="2.14.0"/>
   		<import addon="script.module.xbmcswift2" version="2.4.0"/>
 	</requires>
@@ -37,16 +36,5 @@
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id="script.module.xbmcup" name="XbmcUp" version="0.2.1" provider-name="HAL9000">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-    </requires>
-    <extension library="service.py" point="xbmc.service" start="startup"/>
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-    </extension>
 </addon>
 </addons>
