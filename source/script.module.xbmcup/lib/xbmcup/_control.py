@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-__author__ = 'hal9000'
 __all__ = ['Button', 'Check', 'Edit', 'Fade', 'Group', 'Image', 'Label', 'List', 'Progress', 'Radio', 'Slider', 'Text']
 
 from xbmcgui import ControlButton, ControlEdit, ControlFadeLabel, ControlGroup, ControlImage,\

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-SITE_DOMAIN = 'filmix.me'
+SITE_DOMAIN = 'filmix.cc'
 SITE_URL = 'https://'+SITE_DOMAIN
 PLUGIN_ID = 'plugin.video.filmix.net.dev'
 CACHE_DATABASE = 'filmix.cache.db'

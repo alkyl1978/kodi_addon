@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
 
-__author__ = 'hal9000'
-
 import sys
-
 import xbmc
 import xbmcgui
 import xbmcplugin
-
 import log
 
 #from core import Log
