@@ -6,7 +6,6 @@ chardet
 idna
 Kodistubs
 packaging
-pkg-resources
 requests
 six
 urllib3

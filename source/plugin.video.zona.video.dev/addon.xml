@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-	<addon id="plugin.video.zona.mobi.dev"
+	<addon id="plugin.video.zona.video.dev"
        name="Zona.Mobi"
-       version="0.0.2"
-       provider-name="Evgenii Devisok aka evgen_dev">
+       version="0.0.3"
+       provider-name="alkyl1978">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.xbmcup" version="0.1.1"/>
@@ -13,11 +13,11 @@
 	<extension point="xbmc.addon.metadata">
 		<summary>Zona.Mobi</summary>
 		<description>
-			 Zona.Mobi - Полнометражное кино и телесериалы
+			 Zona.Video - Полнометражное кино и телесериалы
 		</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum></forum>
-		<email>xbmc@devisok.org</email>
+		<email>alkyl1978@yandex.ru</email>
+		<source>https://github.com/alkyl1978/kodi_addon</source>
 	</extension>
 </addon>

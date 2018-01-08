@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repo.alkyl1978" name="alkyl1978 Repo" version="1.0.0" provider-name="alkyl1978">
+<addon id="repo.alkyl1978" name="alkyl1978 Repo" version="2.0.0" provider-name="alkyl1978">
 	<extension point="xbmc.addon.repository" name="alkyl1978 Repo">
 		<dir>
 			<info compressed="false">https://raw.github.com/alkyl1978/kodi_addon/master/addons.xml</info>
 			<checksum>https://raw.github.com/alkyl1978/kodi_addon/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.github.com/alkyl1978/kodi_addon/master/zip</datadir>
+			<datadir zip="true">https://raw.github.com/alkyl1978/kodi_addon/master/repo</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
