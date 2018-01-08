@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="kodi.yarnet" name="yarnet" version="1.0.0" provider-name="alkyl1978">
-	<requires>
-		<import addon="script.module.xbmcup" version="0.1.1"/>
-		<import addon="xbmc.python" version="2.14.0"/>
-  		<import addon="script.module.xbmcswift2" version="2.4.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    		<provides>video</provides>
+<addon id="repo.alkyl1978" name="alkyl1978 Repo" version="2.0.0" provider-name="alkyl1978">
+	<extension point="xbmc.addon.repository" name="alkyl1978 Repo">
+		<dir>
+			<info compressed="false">https://raw.github.com/alkyl1978/kodi_addon/master/addons.xml</info>
+			<checksum>https://raw.github.com/alkyl1978/kodi_addon/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/alkyl1978/kodi_addon/master/repo</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-    		<summary>Yar-net video addon</summary>
-    		<description>просмотр видео онлайн ярославль</description>
-    		<disclaimer>просмотр видео онлайн ярославль</disclaimer>
-    		<platform>all</platform>
-    		<language>ru</language>
-    		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    		<forum>forum.nn-akk.ru</forum>
-    		<website>nn-akk.ru</website>
-    		<email>alkyl1978@nn-akk.ru</email>
-    		<source>https://github.com/alkyl1978/kodi_addon</source>
+		<summary>Свой репозитарий</summary>
+		<description>Свой репозитарий</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
 	</extension>
 </addon>
 
-	<addon id="plugin.video.filmix.net.dev"
-       name="Filmix.Net"
-       version="0.1.0"
+<addon id="script.module.xbmcup" name="XbmcUp" version="0.2.1" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension library="service.py" point="xbmc.service" start="startup"/>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+    </extension>
+</addon>
+
+	<addon id="video.filmix.cc.dev"
+       name="Filmix.cc"
+       version="0.2.0"
        provider-name="Evgenii Devisok aka evgen_dev">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -43,6 +47,29 @@
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<forum>http://xbmc.ru/forum/showthread.php?t=11719</forum>
 		<email>xbmc@devisok.org</email>
+	</extension>
+</addon>
+
+	<addon id="plugin.video.zona.video.dev"
+       name="Zona.Mobi"
+       version="0.0.3"
+       provider-name="alkyl1978">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.xbmcup" version="0.1.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Zona.Mobi</summary>
+		<description>
+			 Zona.Video - Полнометражное кино и телесериалы
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<email>alkyl1978@yandex.ru</email>
+		<source>https://github.com/alkyl1978/kodi_addon</source>
 	</extension>
 </addon>
 
@@ -69,75 +96,26 @@
 	</extension>
 </addon>
 
-	<addon id="plugin.video.watch.is.dev"
-       name="Watch.Is"
-       version="0.0.7"
-       provider-name="Evgenii Devisok aka evgen_dev">
+<addon id="video.yarnet.ru.dev" name="yarnet" version="1.0.0" provider-name="alkyl1978">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Watch.Is</summary>
-		<description>
-			Плагин для он-лайн кинотеатра Watch.Is. Приятного просмотра.
-		</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://xbmc.ru/forum/showthread.php?t=4730</forum>
-		<email>xbmc@devisok.org</email>
-	</extension>
-</addon>
-
-<addon id="repo.alkyl1978" name="alkyl1978 Repo" version="1.0.0" provider-name="alkyl1978">
-	<extension point="xbmc.addon.repository" name="alkyl1978 Repo">
-		<dir>
-			<info compressed="false">https://raw.github.com/alkyl1978/kodi_addon/master/addons.xml</info>
-			<checksum>https://raw.github.com/alkyl1978/kodi_addon/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.github.com/alkyl1978/kodi_addon/master/zip</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Свой репозитарий</summary>
-		<description>Свой репозитарий</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.module.xbmcup" name="XbmcUp" version="0.2.1" provider-name="HAL9000">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-    </requires>
-    <extension library="service.py" point="xbmc.service" start="startup"/>
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-    </extension>
-</addon>
-
-	<addon id="plugin.video.zona.video.dev"
-       name="Zona.Mobi"
-       version="0.0.3"
-       provider-name="alkyl1978">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.xbmcup" version="0.1.1"/>
+		<import addon="xbmc.python" version="2.14.0"/>
+  		<import addon="script.module.xbmcswift2" version="2.4.0"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
-		<provides>video</provides>
+	<extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Zona.Mobi</summary>
-		<description>
-			 Zona.Video - Полнометражное кино и телесериалы
-		</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum></forum>
-		<email>alkyl1978@yandex.ru</email>
+    		<summary>Yar-net video addon</summary>
+    		<description>просмотр видео онлайн ярославль</description>
+    		<disclaimer>просмотр видео онлайн ярославль</disclaimer>
+    		<platform>all</platform>
+    		<language>ru</language>
+    		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    		<forum>forum.nn-akk.ru</forum>
+    		<website>nn-akk.ru</website>
+    		<email>alkyl1978@nn-akk.ru</email>
+    		<source>https://github.com/alkyl1978/kodi_addon</source>
 	</extension>
 </addon>
 </addons>

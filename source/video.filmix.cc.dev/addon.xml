@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-	<addon id="plugin.video.filmix.net.dev"
-       name="Filmix.Net"
-       version="0.1.0"
-       provider-name="Evgenii Devisok aka evgen_dev">
+	<addon id="video.filmix.cc.dev"
+       name="Filmix.cc"
+       version="0.3.0"
+       provider-name="alkyl1978">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.xbmcup" version="0.1.1"/>
@@ -18,6 +18,6 @@
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<forum>http://xbmc.ru/forum/showthread.php?t=11719</forum>
-		<email>xbmc@devisok.org</email>
+		<email>alkyl1978@yandex.ru</email>
 	</extension>
 </addon>
