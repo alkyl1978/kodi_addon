@@ -1,0 +1,37 @@
+<settings>
+    <category label="Основные">
+        <setting id="ListView" type="enum" label="Вид списков" default="2" values="Не менять|Вид 1|Вид 2|Вид 3|Вид 4|Вид 5|Вид 6|Вид 7|Вид 8|Вид 9|Вид 10|Вид 11|Вид 12"/>
+        <setting id="SaveDirectory" type="folder" label="Путь сохранения фильмов (STRM)"         default=""/>
+        <setting id="NFO2"          type="bool"   label="Соxранять описание фильмов (NFO)"       default="true"/>
+        <setting id="label"         type="folder" label="Сериалы сохраняются через torrent checker! Настройки там." default=""/>
+    </category>
+    <category label="P2P">
+        <setting id="Engine" type="enum" label="Плеер" default="0" values="ACE engine|T2Http|YATP|Torrenter"/>
+        <setting id="DownloadDirectory" type="folder" label="Кэш T2Http" visible="eq(-1,1)" default=""/>
+    </category>
+    <category label="Эксперт">
+        <setting id="DebMod"        type="bool"   label="Режим отладки"                          default="false"/>
+        <setting id="DBDirectory"   type="folder" label="Путь хранения базы данных (КЭШ)"        default=""/>
+        <setting id="LocalMod"      type="bool"   label="Отключить запрос описаний с сайта"      default="false"/>
+    </category>
+</settings>
+        <setting id="FastMod"       type="bool"   label="Асинхронный режим"                      default="false"/>
+        <setting id="AREM"          type="bool"   label="Удалять из БУДУ СМОТРЕТЬ сохраненные фильмы"  default="false"/>
+    <category label="Предпочтения">
+        <setting id="Autoplay"  type="bool"  label="Автозапуск фильмов по предпочтениям"  default="false"/>
+        <setting id="CutSize"   type="bool"  label="Отбрасывать раздачи одинакового размера"  default="false"/>
+        <setting id="SortLst"   type="bool"  label="Сортировать раздачи по предпочтениям"  default="true"/>
+        <setting id="F_Size1"   type="enum"  label="Размер мин.:"  default="0"     values="0|1 ГБ|2 ГБ|3 ГБ|4 ГБ|5 ГБ|6 ГБ|7 ГБ|8 ГБ|9 ГБ"/>
+        <setting id="F_Size2"   type="enum"  label="Размер макс.:" default="0" values="Любой|1 ГБ|2 ГБ|3 ГБ|4 ГБ|5 ГБ|6 ГБ|7 ГБ|8 ГБ|9 ГБ|10 ГБ|11 ГБ|12 ГБ|13 ГБ|14 ГБ|15 ГБ|16 ГБ|17 ГБ|18 ГБ|19 ГБ|20 ГБ"/>
+        <setting id="F_Qual"   type="enum"  label="Качество:"    default="0" values="Любое|Выбор"/>
+        <setting id="F_Qual1"  type="bool"  label="DVDrip"   visible="eq(-1,1)"  default="false"/>
+        <setting id="F_Qual2"  type="bool"  label="WEBRip"   visible="eq(-2,1)"  default="false"/>
+        <setting id="F_Qual3"  type="bool"  label="WEB-DL"   visible="eq(-3,1)"  default="false"/>
+        <setting id="F_Qual4"  type="bool"  label="BDRip"    visible="eq(-4,1)"  default="false"/>
+        <setting id="F_Qual5"  type="bool"  label="HDRip"    visible="eq(-5,1)"  default="false"/>
+        <setting id="F_Qual6"  type="bool"  label="TVRip"    visible="eq(-6,1)"  default="false"/>
+        <setting id="F_Qual7"  type="bool"  label="HDTV"     visible="eq(-7,1)"  default="false"/>
+        <setting id="F_Qual8"  type="bool"  label="Blu-Ray"  visible="eq(-8,1)"  default="false"/>
+        <setting id="F_Qual9"  type="bool"  label="720p"     visible="eq(-9,1)"  default="false"/>
+        <setting id="F_Qual10" type="bool"  label="1080p"    visible="eq(-10,1)" default="false"/>
+    </category>
