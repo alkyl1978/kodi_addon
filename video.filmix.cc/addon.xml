@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-	<addon id="plugin.video.zona.video.dev"
-       name="Zona.Mobi"
-       version="0.0.3"
-       provider-name="alkyl1978">
+	<addon id="video.filmix.cc" name="Filmix.cc" version="0.3.0" provider-name="alkyl1978">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.xbmcup" version="0.1.1"/>
@@ -11,13 +8,11 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Zona.Mobi</summary>
-		<description>
-			 Zona.Video - Полнометражное кино и телесериалы
-		</description>
+		<summary>Filmix.Net</summary>
+		<description> Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры. </description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://xbmc.ru/forum/showthread.php?t=11719</forum>
 		<email>alkyl1978@yandex.ru</email>
-		<source>https://github.com/alkyl1978/kodi_addon</source>
 	</extension>
 </addon>
