@@ -83,24 +83,6 @@
   </extension>
 </addon>
 
-	<addon id="plugin.video.zona.video" name="Zona.Mobi" version="0.0.3" provider-name="alkyl1978">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.xbmcup" version="0.1.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Zona.Mobi</summary>
-		<description> Zona.Video - Полнометражное кино и телесериалы </description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<email>alkyl1978@yandex.ru</email>
-		<source>https://github.com/alkyl1978/kodi_addon</source>
-	</extension>
-</addon>
-
 	<addon id="plugin.video.tree.tv" name="Tree.Tv" version="0.3.5" provider-name="Evgenii Devisok aka evgen_dev">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -118,6 +100,24 @@
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<forum></forum>
 		<email>xbmc@devisok.org</email>
+	</extension>
+</addon>
+
+	<addon id="plugin.video.zona" name="Zona.Mobi" version="0.0.4" provider-name="alkyl1978">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.xbmcup" version="0.1.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Zona.Mobi</summary>
+		<description> Zona.Video - Полнометражное кино и телесериалы </description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<email>alkyl1978@yandex.ru</email>
+		<source>https://github.com/alkyl1978/kodi_addon</source>
 	</extension>
 </addon>
 </addons>
