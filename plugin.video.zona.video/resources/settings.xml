@@ -3,7 +3,7 @@
 	<category label="31001">
 		<!--setting label="31003" type="lsep"/>
 		<setting label="31008" type="enum" id="sort_by" default="2" lvalues="31005|31006|31007"/-->
-		
+                <setting id="UrlSite" type="folder" label="url сайта"         default="w1.zona.plus"/>		
 		<setting label="31004" type="lsep"/>
 		<setting id="cache_time" type="number" label="31009" default="10" />
 		<setting label="31010" type="action" action="RunScript($CWD/settings.py, clear_cache)"/>
