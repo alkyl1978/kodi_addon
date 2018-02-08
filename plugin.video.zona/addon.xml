@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-	<addon id="plugin.video.zona.video" name="Zona.Mobi" version="0.0.3" provider-name="alkyl1978">
+	<addon id="plugin.video.zona" name="Zona.Mobi" version="0.0.4" provider-name="alkyl1978">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.xbmcup" version="0.1.1"/>
