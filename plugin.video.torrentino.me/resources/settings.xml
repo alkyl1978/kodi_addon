@@ -2,6 +2,7 @@
     <category label="Основные">
         <setting id="ListView" type="enum" label="Вид списков" default="2" values="Не менять|Вид 1|Вид 2|Вид 3|Вид 4|Вид 5|Вид 6|Вид 7|Вид 8|Вид 9|Вид 10|Вид 11|Вид 12"/>
         <setting id="SaveDirectory" type="folder" label="Путь сохранения фильмов (STRM)"         default=""/>
+        <setting id="UrlSite" type="folder" label="url сайта"         default="ww1.torrentino.net"/>
         <setting id="NFO2"          type="bool"   label="Соxранять описание фильмов (NFO)"       default="true"/>
         <setting id="label"         type="folder" label="Сериалы сохраняются через torrent checker! Настройки там." default=""/>
     </category>

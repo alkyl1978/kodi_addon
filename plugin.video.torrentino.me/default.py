@@ -6,7 +6,7 @@
 import xbmc, xbmcgui, xbmcplugin, xbmcaddon, os, urllib, urllib2, time, codecs, httplib
 
 PLUGIN_NAME   = 'Torrentino'
-siteUrl = 'torrentino.me'
+siteUrl = __settings__.getSetting("UrlSite")
 httpSiteUrl = 'http://' + siteUrl
 handle = int(sys.argv[1])
 addon = xbmcaddon.Addon(id='plugin.video.torrentino.me')
